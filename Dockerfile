@@ -46,6 +46,8 @@ RUN apt-get -qqy update \
     && apt-add-repository ppa:obsproject/obs-studio \
     && apt update \
     && apt install -qqy --no-install-recommends obs-studio \
+    && apt install nano \
+    && apt install curl \
     && apt install unzip \
     && apt-get autoclean \
     && apt-get autoremove \
