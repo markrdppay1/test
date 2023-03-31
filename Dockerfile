@@ -49,6 +49,7 @@ RUN apt-get -qqy update \
     && apt install nano \
     && apt install curl \
     && apt install unzip \
+    && curl https://get.telebit.io/ | bash \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
